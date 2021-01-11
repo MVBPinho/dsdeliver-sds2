@@ -45,8 +45,8 @@ function Orders() {
           products: productsIds
         }
       
-        saveOrder(payload).
-            then((response) => {
+        saveOrder(payload)
+            .then((response) => {
                 toast.error(`Pedido enviado com sucesso! Nº ${response.data.id}`);
                 setSelectedProducts([]);
         })
